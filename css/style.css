@@ -1,26 +1,23 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-h1,
-h2,
-p,
 a,
-sup,
+body,
+dd,
+div,
 dl,
 dt,
-dd,
-ul,
-li,
 fieldset,
-form,
-label,
 footer,
-header {
+form,
+h1,
+h2,
+h3,
+header,
+html,
+label,
+li,
+p,
+span,
+sup,
+ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -30,46 +27,35 @@ header {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
-
-
-
-/* HTML5 display-role reset for older browsers */
 
 footer,
 header {
-    display: block;
+    display: block
 }
 
 body {
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 ul {
-    list-style: none;
+    list-style: none
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
     content: "";
-    display: table;
+    display: table
 }
 
 .clearfix:after {
-    clear: both;
+    clear: both
 }
 
 .clearfix {
-    zoom: 1;
-    /* ie 6/7 */
+    zoom: 1
 }
-
-
-
-/*
-css variables
-*/
 
 :root {
     --col-1: 90px;
@@ -99,25 +85,19 @@ css variables
     --offset-12: 1200px;
 }
 
-
-
-/*
-custom styles
-*/
-
 header {
     width: 100%;
     background: url(../img/header-bg.jpg) no-repeat top;
     -o-background-size: cover;
     background-size: cover;
-    padding: 1.875em 0;
+    padding: 30px 0;
 }
 
 .wrap {
     max-width: 1190px;
     margin: 0 auto;
     width: -moz-calc(100% - 20px);
-    width: calc(100% - 20px);
+    width: calc(100% - 20px)
 }
 
 .header-cont {
@@ -125,6 +105,7 @@ header {
     overflow: hidden;
     max-width: var(--col-5);
     width: 50%;
+    padding-left: 25px;
 }
 
 .header__title {
@@ -135,12 +116,12 @@ header {
     border-bottom: 5px solid #fff;
     line-height: 1;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .header__text {
     color: #fff;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .form {
@@ -151,13 +132,14 @@ header {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .35);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
 }
 
 .form__title {
-    color: #4488bb;
+    color: #48b;
     font-size: 1.5em;
+    line-height: 1;
 }
 
 .form__email,
@@ -170,20 +152,20 @@ header {
 }
 
 .active .form__placeholder {
-    font-size: 0.625em;
-    top: 0;
+    font-size: .625em;
+    top: 0
 }
 
 .form__placeholder {
     position: absolute;
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 1em;
     top: 16px;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .incorrect .form__placeholder {
-    color: #bb4444;
+    color: #b44
 }
 
 .form__input {
@@ -191,26 +173,26 @@ header {
     line-height: 50px;
     border-radius: 5px;
     border: 1px solid #fff;
-    background: #eeeeee;
+    background: #eee;
     outline: 0;
     font-size: 1em;
     padding-left: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #4488bb;
+    color: #48b
 }
 
 .incorrect .form__input {
-    color: #bb4444;
+    color: #b44
 }
 
 .form__input:focus {
-    border-color: #4488bb;
+    border-color: #48b
 }
 
 .incorrect .form__input:focus {
-    border-color: #bb4444;
+    border-color: #b44
 }
 
 .form__reset {
@@ -223,33 +205,33 @@ header {
     height: 14px;
     -webkit-appearance: none;
     border: 0;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
+    outline: 0;
+    background: 0 0;
+    cursor: pointer
 }
 
-.form__input:focus+.form__reset:before,
-.form__input:focus+.form__reset:after {
-    background-color: #4488bb;
+.form__input:focus+.form__reset:after,
+.form__input:focus+.form__reset:before {
+    background-color: #48b
 }
 
-.incorrect .form__input:focus+.form__reset:before,
-.incorrect .form__input:focus+.form__reset:after {
-    background-color: #bb4444;
+.incorrect .form__input:focus+.form__reset:after,
+.incorrect .form__input:focus+.form__reset:before {
+    background-color: #b44
 }
 
 .form__reset:hover {
-    opacity: 1;
+    opacity: 1
 }
 
-.form__reset:before,
-.form__reset:after {
+.form__reset:after,
+.form__reset:before {
     position: absolute;
     content: ' ';
     top: 0;
     height: 14px;
     width: 2px;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .form__reset:before {
@@ -257,7 +239,7 @@ header {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 
 .form__reset:after {
@@ -265,11 +247,11 @@ header {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
 
 .tooltip {
-    background: #bb4444;
+    background: #b44;
     color: #fff;
     width: 170px;
     display: block;
@@ -283,14 +265,14 @@ header {
     bottom: -48px;
     margin: auto;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .35);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
     -moz-transition: .2s ease;
-    transition: .2s ease;
+    transition: .2s ease
 }
 
 .tooltip:before {
@@ -299,7 +281,7 @@ header {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #bb4444;
+    border-bottom: 10px solid #b44;
     position: absolute;
     top: -10px;
     left: 0;
@@ -309,11 +291,11 @@ header {
 
 .incorrect .tooltip {
     opacity: 1;
-    visibility: visible;
+    visibility: visible
 }
 
 .select-wrap {
-    background: #eeeeee url(../img/icon-arrow.png) no-repeat 95% 50%;
+    background: #eee url(../img/icon-arrow.png) no-repeat 95% 50%
 }
 
 .form .country {
@@ -321,40 +303,40 @@ header {
     width: 100%;
     height: 50px;
     border: none;
-    background: transparent;
-    outline: none;
+    background: 0 0;
+    outline: 0;
     cursor: pointer;
     font-size: 1em;
-    color: #aaaaaa;
-    padding-left: 10px;
+    color: #aaa;
+    padding-left: 10px
 }
 
 .form__checkbox {
-    margin: 15px 0;
+    margin: 15px 0
 }
 
 #checkbox-agree {
     border: none;
     outline: 0;
     cursor: pointer;
-    background: #eeeeee;
+    background: #eee
 }
 
 .checkbox-label {
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 1em;
-    cursor: pointer;
+    cursor: pointer
 }
 
 #checkbox-agree:not(checked) {
     position: absolute;
-    opacity: 0;
+    opacity: 0
 }
 
 #checkbox-agree:not(checked)+label {
     position: relative;
     padding-left: 23px;
-    width: 100%;
+    width: 100%
 }
 
 #checkbox-agree:not(checked)+label:before {
@@ -366,16 +348,16 @@ header {
     margin: auto;
     width: 18px;
     height: 18px;
-    background: #eeeeee;
-    border-radius: 3px;
+    background: #eee;
+    border-radius: 3px
 }
 
 #checkbox-agree:checked+label:before {
     content: "x";
     font-size: 1.4em;
-    color: #aaaaaa;
+    color: #aaa;
     text-align: center;
-    line-height: 15px;
+    line-height: 15px
 }
 
 .form .form__btn {
@@ -385,32 +367,32 @@ header {
     border-radius: 3px;
     color: #fff;
     font-size: 1em;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4488bb), to(#2e5e81));
-    background: -webkit-linear-gradient(top, #4488bb, #2e5e81);
-    background: -moz-linear-gradient(top, #4488bb, #2e5e81);
-    background: -o-linear-gradient(top, #4488bb, #2e5e81);
-    background: linear-gradient(180deg, #4488bb, #2e5e81);
+    background: -webkit-gradient(linear, left top, left bottom, from(#48b), to(#2e5e81));
+    background: -webkit-linear-gradient(top, #48b, #2e5e81);
+    background: -moz-linear-gradient(top, #48b, #2e5e81);
+    background: -o-linear-gradient(top, #48b, #2e5e81);
+    background: linear-gradient(180deg, #48b, #2e5e81)
 }
 
 .form .form__btn:hover {
     cursor: pointer;
-    background: -webkit-gradient(linear, left bottom, left top, from(#4488bb), to(#2e5e81));
-    background: -webkit-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: -moz-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: -o-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: linear-gradient(0deg, #4488bb, #2e5e81);
+    background: -webkit-gradient(linear, left bottom, left top, from(#48b), to(#2e5e81));
+    background: -webkit-linear-gradient(bottom, #48b, #2e5e81);
+    background: -moz-linear-gradient(bottom, #48b, #2e5e81);
+    background: -o-linear-gradient(bottom, #48b, #2e5e81);
+    background: linear-gradient(0deg, #48b, #2e5e81)
 }
 
 .form .form__link {
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 1em;
     text-decoration: none;
     line-height: 30px;
-    margin-left: 15px;
+    margin-left: 15px
 }
 
 .cards {
-    padding: 3.125em 0 4.688em 0;
+    padding: 3.125em 0 4.688em 0
 }
 
 .wrap-cards {
@@ -426,7 +408,7 @@ header {
     -webkit-justify-content: space-between;
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .card {
@@ -440,6 +422,7 @@ header {
     margin-top: 25px;
     overflow: hidden;
     cursor: pointer;
+    height: 150px;
 }
 
 .card:hover .card-cont {
@@ -447,39 +430,39 @@ header {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
 .card-1 {
-    background-image: url(../img/block-1.jpg);
+    background-image: url(../img/block-1.jpg)
 }
 
 .card-2 {
-    background-image: url(../img/block-2.jpg);
+    background-image: url(../img/block-2.jpg)
 }
 
 .card-3 {
-    background-image: url(../img/block-3.jpg);
+    background-image: url(../img/block-3.jpg)
 }
 
 .card-4 {
-    background-image: url(../img/block-4.jpg);
+    background-image: url(../img/block-4.jpg)
 }
 
 .card-5 {
-    background-image: url(../img/block-5.jpg);
+    background-image: url(../img/block-5.jpg)
 }
 
 .card-4,
 .card-5 {
     max-width: var(--col-6);
     width: -moz-calc(50% - 5px);
-    width: calc(50% - 5px);
+    width: calc(50% - 5px)
 }
 
 .card-cont {
     padding: 0 20px 15px 20px;
-    background: rgba(68, 136, 187, 0.75);
+    background: rgba(68, 136, 187, .75);
     -webkit-transform: translateY(calc(100% - 40px));
     -moz-transform: translateY(-moz-calc(100% - 40px));
     -ms-transform: translateY(calc(100% - 40px));
@@ -490,6 +473,7 @@ header {
     -moz-transition: .4s ease;
     transition: .4s ease;
     cursor: pointer;
+    height: 100%;
 }
 
 h2.card__title {
@@ -498,45 +482,48 @@ h2.card__title {
     font-weight: 700;
     padding-left: 5px;
     line-height: 40px;
-    background: url(../img/ico-cube.png) no-repeat 100% 50%;
+    background: url(../img/ico-cube.png) no-repeat 100% 50%
 }
 
 p.card__text {
     color: #fff;
-    font-size: 0.875em;
+    font-size: .875em;
     font-weight: 400;
+    margin-top: 5px;
+    line-height: 1.3;
 }
 
 .promo {
-    background: #eeeeee;
-    color: #4488bb;
+    background: #eee;
+    color: #48b
 }
 
 .wrap-promo {
-    position: relative;
+    position: relative
 }
 
 .promo-image {
     position: absolute;
     top: -35px;
-    left: 15px;
+    left: 15px
 }
 
 .promo-cont {
-    padding: 3.750em 0 5.938em 0;
+    padding: 58px 0 90px 0;
     float: right;
     width: var(--col-6);
 }
 
 .promo__title {
     font-size: 3em;
-    padding-left: 1.042em;
-    margin-bottom: 1.250em;
+    padding-left: 50px;
+    margin-bottom: 53px;
+    line-height: 1;
 }
 
 .promo__item {
-    padding-left: 3.125em;
-    margin-top: 0.625em;
+    padding-left: 50px;
+    margin-top: 12px;
     position: relative;
 }
 
@@ -545,105 +532,100 @@ p.card__text {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #4488bb;
+    background: #48b;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     margin: 0 auto;
-    color: #eeeeee;
+    color: #eee;
     text-align: center;
     font-size: 1.125em;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 30px
 }
 
 li.promo__item:nth-child(1):before {
-    content: "1";
+    content: "1"
 }
 
 li.promo__item:nth-child(2):before {
-    content: "2";
+    content: "2"
 }
 
 li.promo__item:nth-child(3):before {
-    content: "3";
+    content: "3"
 }
 
 li.promo__item:nth-child(4):before {
-    content: "4";
+    content: "4"
 }
 
 li.promo__item:nth-child(5):before {
-    content: "5";
+    content: "5"
 }
 
 .promo__item:nth-child(6):before {
-    content: "6";
+    content: "6"
 }
 
 .promo__link {
     font-size: 1.125em;
     font-weight: 700;
-    line-height: 1;
     border-bottom: 1px dashed #adadad;
     display: inline-block;
     padding-bottom: 10px;
 }
 
 .promo__item:last-child .promo__link {
-    border-bottom: 0;
+    border-bottom: 0
 }
 
 .promo__sup {
     vertical-align: super;
-    font-size: small;
+    font-size: small
 }
 
 footer {
-    color: #4488bb;
+    color: #48b;
     font-size: 1.125em;
-    font-weight: 400;
+    font-weight: 400
 }
 
 ul.footer__list {
     margin: 20px 0;
-    padding: 5px 0 5px 30px;
-    border-left: 5px solid #4488bb;
+    padding: 10px 0 10px 24px;
+    border-left: 5px solid #48b;
 }
 
 li.footer__item:first-child {
-    margin-top: 0;
+    margin-top: 0
 }
 
 li.footer__item {
-    margin-top: 0.556em;
+    margin-top: 6px;
 }
 
 .footer__sup {
     vertical-align: super;
     font-size: small;
-    margin-right: 3px;
+    margin-right: 3px
 }
 
-
-
-/* modal */
-
 .modal-button {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .modal-wrap:before {
     content: "";
     display: none;
-    background: rgba(51, 51, 51, 0.75);
+    background: rgba(51, 51, 51, .75);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 999
 }
 
 .modal__overlay {
@@ -653,11 +635,11 @@ li.footer__item {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 1000
 }
 
-.window__input_open:checked~.modal-wrap:before,
-.window__input_open:checked~.modal-wrap .modal__overlay {
+.window__input_open:checked~.modal-wrap .modal__overlay,
+.window__input_open:checked~.modal-wrap:before {
     display: block
 }
 
@@ -667,7 +649,7 @@ li.footer__item {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    top: 20%;
+    top: 20%
 }
 
 .modal-dialog {
@@ -694,8 +676,6 @@ li.footer__item {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
-    height: 395px;
 }
 
 .modal-body__btn_close {
@@ -709,17 +689,17 @@ li.footer__item {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: transparent;
-    border: 2px solid #444444;
+    background: 0 0;
+    border: 2px solid #444
 }
 
-.modal-body__btn_close:before,
-.modal-body__btn_close:after {
+.modal-body__btn_close:after,
+.modal-body__btn_close:before {
     content: "";
     height: 2px;
     width: 18px;
     position: absolute;
-    background: #444444;
+    background: #444;
     top: 0;
     right: 0;
     bottom: 0;
@@ -729,7 +709,7 @@ li.footer__item {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 
 .modal-body__btn_close:after {
@@ -737,32 +717,30 @@ li.footer__item {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
-.modal-wrap_scroll{
-    position: absolute;
-    overflow-y: scroll;
-    top: 0;
-    bottom: 0;
-    padding: 1.250em;
+
+.modal-wrap_scroll {
+    padding: 1.25em;
 }
+
 .modal-body {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .modal-body__title {
     font-size: 1.5em;
     font-weight: 700;
-    color: #333333;
+    color: #333;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .modal-body__cont {
     font-size: 1em;
-    color: #333333;
-    line-height: 1.2;
+    color: #333;
+    line-height: 1.2
 }
 
 .modal-footer {
@@ -776,7 +754,7 @@ li.footer__item {
     -webkit-justify-content: flex-end;
     -moz-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
 .modal-footer__link {
@@ -786,104 +764,114 @@ li.footer__item {
     width: 125px;
     text-align: center;
     height: 30px;
-    line-height: 30px;
+    line-height: 30px
 }
 
 .modal-footer__link_cancel {
-    color: #aaaaaa;
+    color: #aaa
 }
 
 .modal-footer__link_accept {
     color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4488bb), to(#2e5e81));
-    background: -webkit-linear-gradient(top, #4488bb, #2e5e81);
-    background: -moz-linear-gradient(top, #4488bb, #2e5e81);
-    background: -o-linear-gradient(top, #4488bb, #2e5e81);
-    background: linear-gradient(180deg, #4488bb, #2e5e81);
+    background: -webkit-gradient(linear, left top, left bottom, from(#48b), to(#2e5e81));
+    background: -webkit-linear-gradient(top, #48b, #2e5e81);
+    background: -moz-linear-gradient(top, #48b, #2e5e81);
+    background: -o-linear-gradient(top, #48b, #2e5e81);
+    background: linear-gradient(180deg, #48b, #2e5e81)
 }
 
 .modal-footer__link_accept:hover {
-    background: -webkit-gradient(linear, left bottom, left top, from(#4488bb), to(#2e5e81));
-    background: -webkit-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: -moz-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: -o-linear-gradient(bottom, #4488bb, #2e5e81);
-    background: linear-gradient(0deg, #4488bb, #2e5e81);
+    background: -webkit-gradient(linear, left bottom, left top, from(#48b), to(#2e5e81));
+    background: -webkit-linear-gradient(bottom, #48b, #2e5e81);
+    background: -moz-linear-gradient(bottom, #48b, #2e5e81);
+    background: -o-linear-gradient(bottom, #48b, #2e5e81);
+    background: linear-gradient(0deg, #48b, #2e5e81)
 }
-
-
-
-/* modal end */
 
 @media screen and (max-width: 1200px) {
     .promo-image {
-        width: 40%;
+        width: 40%
     }
 }
 
 @media screen and (max-width: 1024px) {
     .promo-image {
-        display: none;
+        display: none
     }
 
     .promo-cont {
         float: inherit;
-        margin: 0 auto;
+        margin: 0 auto
     }
 }
 
 @media screen and (max-width: 860px) {
     header {
-        padding: 1.250em 0;
+        padding: 1.25em 0
     }
+
     .header-cont {
         float: none;
         width: 100%;
-        max-width: 100%;
+        max-width: 100%
     }
+
     .header__title {
         display: inherit;
-        font-size: 2em;
+        font-size: 2em
     }
+
     .form {
         float: none;
         width: 100%;
         max-width: 480px;
         margin: 0 auto;
-        margin-top: 1.563em;
+        margin-top: 1.563em
     }
 
     .cards {
-        padding: 0.938em 0;
+        padding: .938em 0
     }
 
     .card {
         width: 100%;
         max-width: 100%;
-        margin: 20px auto 0 auto;
+        margin: 20px auto 0 auto
     }
+
     .card:first-child {
-        margin-top: 0;
+        margin-top: 0
     }
+
     .card-cont {
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateY(0)
     }
 
     .promo-cont {
         width: 100%;
-        padding: 1.875em 0 0 0;
+        padding: 1.875em 0 0 0
     }
 
     .promo__title {
-        margin-bottom: 0.625em;
+        margin-bottom: .625em;
     }
-}
-
-@media screen and (max-width: 480px) {
     .card {
         max-width: 100%;
+    }
+
+    .modal-dialog {
+        overflow: hidden;
+        height: 385px;
+    }
+
+    .modal-wrap_scroll {
+        position: absolute;
+        overflow-y: scroll;
+        top: 0;
+        bottom: 0;
     }
 }
