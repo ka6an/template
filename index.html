@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap clearfix">
+            <div class="header-cont">
+                <h1 class="header__title">Banner header</h1>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            </div>
+            <form class="form" onsubmit="return validate_form();">
+                <h2 class="form__title">Request form</h2>
+                <dl class="form__email" onclick="focus_input(this);">
+                    <dt class="form__placeholder">Enter your E-Mail</dt>
+                    <dd>
+                        <input class="form__input form__input-email" type="text" id="email" onblur="unfocus_input(this);">
+                        <label class="form__reset"></label>
+                    </dd>
+                    <dd class="tooltip">Enter correct E-Mail</dd>
+                </dl>
+                <dl class="form__name" onclick="focus_input(this);">
+                    <dt class="form__placeholder">Enter your name</dt>
+                    <dd>
+                        <input class="form__input form__input-name" type="text" id="name" onblur="unfocus_input(this);">
+                        <label class="form__reset"></label>
+                    </dd>
+                </dl>
+                <div class="select-wrap">
+                    <select id="country" name="country" class="country">
+                        <option value="0">Select your country</option>
+                        <option value="rus">Russia</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <fieldset class="form__checkbox">
+                    <input type="checkbox" id="checkbox-agree">
+                    <label class="checkbox-label" for="checkbox-agree">I agree with Terms & Conditions</label>
+                </fieldset>
+                <fieldset>
+                    <input class="form__btn" type="submit" value="Submit">
+                    <a class="form__link" href="#0">Hyperlink</a>
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <div class="cards">
+        <div class="wrap wrap-cards">
+            <div class="card card-1">
+                <div class="card-cont">
+                    <h2 class="card__title">Post header 1</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-cont">
+                    <h2 class="card__title">Post header 2</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-cont">
+                    <h2 class="card__title">Post header 3</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="card card-4">
+                <div class="card-cont">
+                    <h2 class="card__title">Post header 4</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="card card-5">
+                <div class="card-cont">
+                    <h2 class="card__title">Post header 5</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="wrap wrap-promo clearfix">
+            <img src="img/img-apple.png" alt="apple monitor" class="promo-image">
+            <div class="promo-cont">
+                <h2 class="promo__title">Title text</h2>
+                <ul class="promo__list">
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Duis aute irure dolor in reprehenderit<sup class="promo__sup">1</sup> in voluptate velit</label>
+                    </li>
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Ullamco laboris nisi ut aliquip ex ea commodo consequat </label>
+                    </li>
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Ut enim ad minim veniam, quis nostrud exercitation </label>
+                    </li>
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Et dolore magna aliqua</label>
+                    </li>
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Sed do eiusmod tempor<sup class="promo__sup">2</sup> incididunt ut labore</label>
+                    </li>
+                    <li class="promo__item">
+                        <label for="modal-1" class="promo__link modal-button">Lorem ipsum dolor sit amet<sup class="promo__sup">3</sup> consectetur adipisicing elit</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__text"><sup class="footer__sup">1</sup>Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text"><sup class="footer__sup">2</sup>Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text"><sup class="footer__sup">3</sup>Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="modal-window">
+        <input class="window__input_open" id="modal-1" type="checkbox" hidden>
+        <div class="modal-wrap" aria-hidden="true" role="dialog">
+            <label class="modal__overlay" for="modal-1"></label>
+            <div class="modal-dialog">
+                <div class="modal-wrap_scroll">
+                    <div class="modal-body">
+                        <label class="modal-body__btn_close" for="modal-1" aria-hidden="true" aria-label="Close"></label>
+                        <h2 class="modal-body__title">External link</h2>
+                        <p class="modal-body__cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#0" class="modal-footer__link modal-footer__link_cancel">Cancel</a>
+                        <a href="#0" class="modal-footer__link modal-footer__link_accept">Accept</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
