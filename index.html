@@ -31,19 +31,24 @@
                         <input class="form__input form__input-name" type="text" id="name" onblur="unfocus_input(this);">
                         <label class="form__reset"></label>
                     </dd>
+                    <dd class="tooltip">Enter correct name</dd>
                 </dl>
                 <div class="select-wrap">
-                    <select id="country" name="country" class="country">
-                        <option value="0">Select your country</option>
-                        <option value="rus">Russia</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                    <div class="select-wrap-child">
+                        <select id="country" name="country" class="country" onblur="unfocus_select(this);">
+                            <option value="0">Select your country</option>
+                            <option value="rus">Russia</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="tooltip">Select your country</div>
                 </div>
                 <fieldset class="form__checkbox">
-                    <input type="checkbox" id="checkbox-agree">
+                    <input type="checkbox" id="checkbox-agree" onchange="is_checked(this);">
                     <label class="checkbox-label" for="checkbox-agree">I agree with Terms & Conditions</label>
+                    <p class="tooltip">Select the checkbox</p>
                 </fieldset>
                 <fieldset>
                     <input class="form__btn" type="submit" value="Submit">
@@ -149,7 +154,7 @@
         </div>
     </div>
     <script src="js/jquery.js"></script>
-    <script src="js/js.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
